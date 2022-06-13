@@ -22,6 +22,8 @@ services:
 
   gitlab:
     restart: always
+    labels:
+      shipyard.route: '/'
     image: sameersbn/gitlab:15.0.2
     depends_on:
     - redis
